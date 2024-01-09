@@ -11,5 +11,5 @@
 <p align="justify">➡️Exibindo o Gráfico: Para exibir o gráfico na tela, foi utilizado o plt.show() p.</p>
 
 <div align="center">
-<img  src="grafico_repositorios.png" alt="grafico">
+<img  src="grafico_repositorios1.png" alt="grafico">
 </div>
