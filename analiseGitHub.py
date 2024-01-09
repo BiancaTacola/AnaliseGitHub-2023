@@ -33,25 +33,17 @@ for repo in repos:
 labels, counts = zip(*languages_used.items())
 
 # Lista de meses de 2023
-meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+meses = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']
 
 plt.bar(labels, counts)
-plt.xlabel('Linguagem')
+
 plt.ylabel('Quantidade de Projetos')
-plt.title(f'Linguagens Usadas em Repositórios Criados em 2023 ({username})')
+plt.title(f'Linguagens utilizadas em Repositórios Criados em 2023 ({username})')
 plt.xticks(rotation=45, ha='right')
-
-# Adiciona o número de projetos dentro das barras
-for i, count in enumerate(counts):
-    plt.text(i, count, str(count), ha='center', va='bottom')
-
-# Ajusta o eixo Y para representar os meses
-plt.yticks(range(1, len(meses) + 1), meses)
-
 plt.tight_layout()
 
 # Caminho completo para o arquivo de imagem
-caminho_arquivo = 'C:\\Bianca\\Bianca\\Alura\\Python_1\\grafico_repositorios.png'
+caminho_arquivo = 'C:\\Bianca\\Bianca\\Alura\\Python_1\\grafico1_repositorios.png'
 
 # Salva o gráfico como um arquivo de imagem
 plt.savefig(caminho_arquivo)
